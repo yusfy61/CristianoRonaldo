@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #555; 
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.icerik {
+    width: 1000px; /* Genişliği biraz artırdık ki boşluklara yer kalsın */
+    background-color: white; /* Bütün sayfanın beyaz arka planı */
+    display: flex; 
+    padding: 40px; /* İŞTE BU: En soldaki, sağdaki, üst ve alttaki kağıt beyazlığı */
+    gap: 40px; /* İŞTE BU: Sol gri menü ile sağ tarafın (ikisinin) arasındaki beyaz boşluk */
+    box-shadow: 0 0 20px rgba(0,0,0,0.2); 
+}
+
+/* --- SOL MENÜ AYARLARI --- */
+.sol {
+    width: 32%; /* Aradaki boşluktan dolayı bunu hafif daralttık */
+    background-color: #e6e8eb !important; 
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.vesikalık {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px; 
+}
+
+.vesikalık img {
+    width: 160px;
+    height: 160px; 
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white; 
+}
+
+.iletisim, .egitim, .yetenek {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.iletisimxd h3, .egitimxd h3, .yeteneks h3 {
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding-bottom: 8px; 
+    border-bottom: 1px solid #888; 
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.telefon, .mail, .konum, .businessmail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icon { 
+    width: 25px;
+    font-size: 14px;
+    color: #333;
+}
+
+.text {
+    font-size: 13px;
+    color: #444;
+}
+
+.derece p {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.derecesi p {
+    font-size: 12px;
+    color: #555;
+    margin-top: 3px;
+}
+
+.yetenekleri p {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* --- SAĞ MENÜ AYARLARI --- */
+.sag {
+    width: 68%;
+    background-color: white; 
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.black-box {
+    background-color: #3a3a3a; 
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.black-box h1 {
+    font-weight: 400;
+    letter-spacing: 6px;
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.divider {
+    width: 60px; 
+    height: 1px; 
+    background-color: #ffffff;
+    margin: 15px auto; 
+    opacity: 0.7;
+}
+
+.black-box p {
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ddd;
+}
+
+.profil, .isdeneyimi-alani {
+    /* Eski sağ/sol boşlukları kaldırdık, metin siyah kutuyla dümdüz aynı hizada başlasın */
+    padding: 0; 
+    margin-bottom: 35px;
+}
+
+.profili h3, .isdeneyimi h3 {
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.biyografi p {
+    font-size: 13px;
+    line-height: 1.6;
+    font-weight: normal; 
+    color: #444;
+    text-align: justify;
+}
+
+/* İş Deneyimi CSS'leri */
+.deneyimler {
+    margin-bottom: 20px;
+}
+
+.pozisyon {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.sirket {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.deneyim-yazisi {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.deneyim-liste {
+    padding-left: 20px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.deneyim-liste li {
+    margin-bottom: 5px;
+}
